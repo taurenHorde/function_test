@@ -1,0 +1,42 @@
+.menu-wrap {
+    width: 100%;
+    max-width: 350px;
+}
+
+.menu-wrap>div {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.menu-head {
+    text-align: center;
+}
+
+.menu-body {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu-body .menu-item-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-body .menu-item-wrap .menu-item {
+    width: 100%;
+    margin: 7.5px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 202, 202);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.055), -2px -2px 2px rgba(0, 0, 0, 0.055);
+    cursor: pointer;
+}
+
+.menu-body .menu-item-wrap .menu-item p {
+    user-select: none;
+    font-size: 0.8rem;
+}

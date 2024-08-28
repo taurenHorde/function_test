@@ -1,0 +1,46 @@
+.reactWindow-wrap {
+    width: 100%;
+    max-width: 400px;
+}
+
+.reactWindow-wrap>div {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+/*  //////////////////////////Head////////////////////////// */
+.reactWindow-head {
+    padding: 5px 0px;
+}
+
+.reactWindow-head .title {
+    text-align: center;
+}
+
+.reactWindow-head .Description {
+    margin: 10px 0px 5px;
+}
+
+.reactWindow-head .Description p {
+    font-size: 0.8rem;
+}
+
+.reactWindow-head .characteristic {
+    margin: 10px 0px 5px;
+}
+
+.reactWindow-head .characteristic ul {
+    width: 100%;
+    list-style-position: inside;
+}
+
+.reactWindow-head .characteristic ul li {
+    padding: 2.5px 0px;
+    font-size: 0.7rem;
+}
+
+/*  //////////////////////////Body////////////////////////// */
+.reactWindow-body {
+    padding: 5px 0px;
+    margin-top: 20px;
+}
