@@ -9,6 +9,7 @@
 }
 
 /*  //////////////////////////Head////////////////////////// */
+
 .reactWindow-head {
     padding: 5px 0px;
 }
@@ -43,4 +44,27 @@
 .reactWindow-body {
     padding: 5px 0px;
     margin-top: 20px;
+}
+
+.calendar-wrap {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  //////////////////////////Footer////////////////////////// */
+.step-footer {
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+
+.step-footer p {
+    font-size: 0.7rem;
+}
+
+.select-wrap {
+    display: flex;
+
 }

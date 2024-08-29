@@ -1,5 +1,5 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit'
-
+import moment from 'moment';
 
 
 let menuStore = createSlice({
@@ -11,8 +11,46 @@ let menuStore = createSlice({
     ]
 })
 
+let dateStore = createSlice({
+    name: 'date',
+    initialState: {
+        origindate: [],
+        date: {
+
+        },
+        select: false
+    },
+    reducers: {
+        addDate(state, action) {
+            const isExist = state.origindate.includes(action.payload)
+            if (isExist) return;
+            if (!isExist) state.origindate.push(action.payload)
+            const year = moment(action.payload).format('YYYY');
+            const month = moment(action.payload).format('MM');
+            const day = moment(action.payload).format('DD');
+
+            if (!state.date[year]) {
+                state.date[`${year}`] = { [`${month}`]: [day] }
+            } else {
+                if (!state.date[year][month]) state.date[year][month] = [day];
+                if (!!state.date[year][month]) state.date[year][month].push(day);
+            }
+
+            const sortYear = Object.keys(state.date).sort((a, b) => a - b);
+            const sortedData = {};
+            sortYear.forEach(year => {
+                sortedData[year] = state.date[year]
+            })
+            state.date = sortedData
+        }
+    }
+})
+
+
+export let { addDate } = dateStore.actions
 export default configureStore({
     reducer: {
-        menuStore: menuStore.reducer
+        menuStore: menuStore.reducer,
+        dateStore: dateStore.reducer
     }
 }) 
