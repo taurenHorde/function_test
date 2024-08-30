@@ -22,7 +22,7 @@ let dateStore = createSlice({
     },
     reducers: {
         addDate(state, action) {
-            const isExist = state.origindate.includes(action.payload)
+            const isExist = state.origindate.includes(action.payload);
             if (isExist) return;
             if (!isExist) state.origindate.push(action.payload)
             const year = moment(action.payload).format('YYYY');
