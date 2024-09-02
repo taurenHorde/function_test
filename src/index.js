@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename='function_page'>
+      <BrowserRouter basename='functionPage'>
         <App />
       </BrowserRouter>
     </Provider>

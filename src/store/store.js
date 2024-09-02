@@ -14,6 +14,7 @@ let menuStore = createSlice({
         { id: 7, name: '생각 중', link: '' },
         { id: 8, name: '생각 중', link: '' },
         { id: 9, name: '생각 중', link: '' },
+        { id: 10, name: '생각 중', link: '' },
     ]
 })
 
