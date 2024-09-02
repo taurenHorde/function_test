@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 
-import Menu from './component/menu';
-import ReactWindow from './component/reactWindow';
+import Menu from './component/Menu';
+import ReactWindow from './component/Funtion1/ReactWindow';
 
 function App() {
   return (

@@ -18,11 +18,11 @@
     text-align: center;
 }
 
-.reactWindow-head .Description {
+.reactWindow-head .introduction {
     margin: 10px 0px 5px;
 }
 
-.reactWindow-head .Description p {
+.reactWindow-head .introduction p {
     font-size: 0.8rem;
 }
 
@@ -46,7 +46,11 @@
     margin-top: 20px;
 }
 
-.calendar-wrap {
+/*  ///////////step1- head///////////////// */
+/*  ///////////step1- body///////////////// */
+
+
+.step1 .calendar-wrap {
     width: 100%;
     margin-top: 15px;
     display: flex;
@@ -54,17 +58,230 @@
     align-items: center;
 }
 
-/*  //////////////////////////Footer////////////////////////// */
-.step-footer {
+/*  ///////////step1- footer///////////////// */
+
+.step1 .step-footer {
     padding: 5px 0px;
     margin-top: 10px;
 }
 
-.step-footer p {
+.step1 .step-footer p {
     font-size: 0.7rem;
 }
 
-.select-wrap {
+.step1 .select-wrap {
     display: flex;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+
+.step1 .select-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2px 0px;
+    padding: 2px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.step1 .select-year {
+    padding: 5px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step1 .select-months-box {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.step1 .select-month-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2px 0px;
+}
+
+.step1 .select-month {
+    min-width: 30px;
+}
+
+.step1 .select-day {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step1 .select-day>p {
+    margin: 0px 2px;
+}
+
+/*  ///////////step1- button///////////////// */
+
+.step1 .step-button {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border-top: 1px dotted gray;
+}
+
+.step1 .step-button .button-text p {
+    font-size: 0.7rem;
+}
+
+.step1 .step-button .button-box {
+    margin: 5px 0px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.step1 .step-button .button-box .button-reset {
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: rgb(240, 240, 240);
+    font-size: 0.8rem;
+}
+
+/*  ///////////step2- head///////////////// */
+.step2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.step2 .step-head {
+    margin: 10px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.step2 .step-head p {
+    font-size: 0.7rem;
+}
+
+/*  ///////////step2- body///////////////// */
+.step2 .step-body {
+    flex: 1 1 auto;
+    min-height: 50px;
+    background: #f0f0f0;
+}
+
+.step2 .step-body .list-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.step2 .step-body .list-wrap .list-but {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step2 .step-body .list-wrap .list-but p {
+    cursor: pointer;
+}
+
+
+.step2 .step-body .list-wrap .no-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.step2 .step-body .list-wrap p {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/*  ///////////step2- footer///////////////// */
+.step2 .step-footer p {
+    font-size: 0.7rem;
+}
+
+/*  ///////////step2- button///////////////// */
+.step2 .step-button .button-box {
+    margin: 5px 0px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.step2 .step-button .button-box button {
+    min-width: 100px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: rgb(240, 240, 240);
+    font-size: 0.8rem;
+}
+
+
+/*  ///////////step3- head///////////////// */
+/*  ///////////step3- body///////////////// */
+.step3 .step-body {
+    padding: 20px 0px;
+}
+
+.step3 .step-body p {
+    font-size: 0.7rem;
+    margin: 1.5px 0px;
+}
+
+/*  ///////////step3- footer///////////////// */
+.step3 .step-footer {
+    padding: 20px 0px;
+}
+.step3 .step-footer p {
+    font-size: 0.7rem;
+    margin: 1.5px 0px;
+}
+
+/*  ///////////step3- button///////////////// */
+
+.step3 .step-button .button-box {
+    margin: 5px 0px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.step3 .step-button .button-box button {
+    min-width: 100px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: rgb(240, 240, 240);
+    font-size: 0.8rem;
+}
+
+/*  //////////////////////////Footer////////////////////////// */

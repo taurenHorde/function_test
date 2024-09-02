@@ -14,8 +14,9 @@
     "react-redux": "^8.1.3",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "react-virtualized-auto-sizer": "^1.0.24",
     "react-window": "^1.8.10",
-    "styled-components": "^6.1.12",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,5 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://taurenhorde.github.io/function_page/menu"
 }
